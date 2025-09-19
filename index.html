@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mauro Sebastian Arias</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <script>
+        function saludar() {
+            let user = document.getElementById("txtNombre").value;
+            alert("Gracias " + user + " por contactarte conmigo. Pronto te estaré respondiendo a tu casilla de email.")
+        }
+    </script>
+
+    <header class="header">
+        <nav class="nav">
+            <h4 class="logo">Mauro Sebastian Arias</h4>
+            <ul class="nav-list">
+                <li><a href="#Presentacion">Presentacion</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Educacion">Educacion</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="Presentacion" class="section presentacion">
+            <h1>Sobre mi</h1>
+            <figure>
+                <img src="Imagenes/Imagen de WhatsApp 8.jpg" alt="Fotoperfil" class="perfil">
+                <figcaption>
+                    Soy estudiante de segundo año de la Tecnicatura Universitaria en Programacion en la UTN
+                    FRGP. Actualmente trabajo en el rubro de mantenimiento electrico, pero hace unos pocos años decidí
+                    cambiar mi rumbo profesional hacia el desarrollo de software. La tecnologia me apasiona y espero en
+                    un futuro poder ser un profesional en la materia. Me considero una persona trabajadora y
+                    predispuesta a perfeccionarse constantemente.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="Proyectos" class="section">
+            <h2>Mis Proyectos</h2>
+            <div class="grid">
+                <article class="card">
+                    <h4>Sistema de gestión para institucion educativa.</h4>
+                    <img src="Imagenes/Proyecto1C.jpg" alt="Proyecto 1">
+                    <p>Este proyecto fue realizado como Trabajo Final Integrador de la materia Programación II
+                        en la UTN. Se trata de una aplicación de consola en C++, desarrollada de forma grupal, que
+                        gestiona los datos de una institución educativa.
+                    </p>
+                    <a href="https://github.com/SebastianDte/Sistema_Gestion_Escolar_UTN" class="btn"
+                        target="_blank">Ver en Github </a>
+
+                </article>
+
+                <article class="card">
+                    <h4> Aplicacion de escritorio para gestión de articulos.</h4>
+                    <img src="Imagenes/imagenProyecto_2.png" alt="Proyecto2">
+                    <p>Aplicacion de escritorio WinForms para la gestión de artículos de un cátalogo de
+                        comercio, desarrollada con .NET Framework 4.8 y C#. La aplicación implementa arquitectura en
+                        capas, manejo de excepciones y validaciones, con persistencia de datos mediante ADO.NET.
+                    </p>
+                    <a href="https://github.com/SebastianDte/TP-WinForm-Equipo-9B" class="btn" target="_blank">Ver en
+                        Github </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="Educacion" class="section educacion">
+            <h2>Educacion</h2>
+            <ul>
+                <li>
+                    <h4>Tecnicatura Univeritaria en Programacion</h4>
+                    <p>UTN FRGP.</p>
+                    <p>2024 - En curso.</p>
+                </li>
+                <li>
+                    <h4>Full Stack Java</h4>
+                    <p>Codo a Codo 4.0. Ministerio de Educacion CABA.</p>
+                    <p>2023</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Contacto" class="section">
+            <h2>Contacto</h2>
+            <form class="form">
+                <input type="text" placeholder="Nombre" id="txtNombre" required>
+                <input type="email" placeholder="Email" id="txtEmail" required>
+                <textarea placeholder="Escribe tu mensaje..." id="mensaje" required></textarea>
+                <button type="submit" onclick="saludar()">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <a href="https://github.com/MauroSebas" target="_blank">
+            <img src="Imagenes/il_794xN.5850958381_ikey.jpg" alt="logo-github">
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

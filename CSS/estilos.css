@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Paleta de colores y fuente */
+:root {
+    --color-fondo: #000;
+    --color-texto: #f8fafc;
+    --color-secundario: #c1ceff;
+    --color-acento: #818cf8;
+    --color-acento-hover: #6366f1;
+    --fuente-base: "Poppins", Arial, sans-serif;
+}
+
+/* Base */
+body {
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-base);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #0a0892;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Lista de navegación */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.nav-list a {
+    color: var(--color-texto);
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3 ease;
+}
+
+.nav-list a:hover {
+    color: var(--color-acento-hover);
+}
+
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--color-texto);
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--color-secundario);
+}
+
+a {
+    color: var(--color-acento);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-acento-hover);
+    text-shadow: 0 0 8px rgba(129, 140, 248, 0.6);
+}
+
+.button {
+    background: var(--color-acento);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: var(--color-acento-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Presentación */
+.presentacion {
+    text-align: center;
+}
+
+.presentacion img.perfil {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--color-acento);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.presentacion figcaption {
+    margin-top: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: var(--color-secundario);
+}
+
+/* Proyectos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: var(--radio-borde);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: tranlateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radio-borde);
+    margin-bottom: 1rem
+}
+
+.card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-acento);
+}
+
+.card p {
+    color: var(--color-secundario);
+    font-size: 0.90rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(black);
+    color: #fff;
+    text-decoration: none;
+    border-radius: var(--radio-borde);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: var(black);
+    transform: scale(1.05);
+}
+
+/*Educacion*/
+.educacion {
+    text-align: center;
+}
+
+.educacion ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.educacion li {
+    margin-bottom: 1.5rem;
+}
+
+/* Contacto */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form input,
+.form textarea {
+    padding: 0.75rem;
+    border-radius: var(--radio-borde);
+    border: none;
+    outline: none;
+    font-family: var(--fuente-base);
+}
+
+.form button {
+    background: var(--color-acento);
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: var(--color-acento-hover);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    background: #0a0892;
+    font-size: 0.9rem;
+}
+
+.footer img {
+    width: 80px;
+    height: auto;
+    border: 2px solid var(--color-acento);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--color-acento-hover);
+    cursor: pointer;
+}
